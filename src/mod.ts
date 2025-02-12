@@ -3,10 +3,7 @@ import { html } from 'npm:htm@^3.1.1/preact';
 import type { VNode } from 'npm:preact@^10.25.4';
 import { isValid, parseISO } from 'npm:date-fns@^4.1.0';
 import { formatInTimeZone } from 'npm:date-fns-tz@^3.2.0';
-
-// const styles = Deno.readTextFileSync('src/styles.css');
 import { styles } from './styles.ts';
-// const clientScript = Deno.readTextFileSync('src/clientScript.js');
 import { clientScript } from './clientScript.js';
 
 const showUndefined = true;
@@ -243,7 +240,8 @@ const GenerateJsObjectHtml = ({ jsonData, defaultOpenLevels = 3, depth = 0 }: {
   return formatPrimitive(jsonData);
 };
 
-export function getHtmlOfObjectTable(object: unknown): string {
+/** Converts a JavaScript object into an interactive HTML table view with collapsible sections */
+export function getHtmlOfObjectTable(object: object): string {
   const content = render(html`<div class="json-viewer-table">
     <div class="fold-level-indicator">Press 1-10 to adjust fold level (current: 3) | Folding Mode: normal (hold Shift for recursive)</div>
     ${GenerateJsObjectHtml({ jsonData: object, defaultOpenLevels: 3 })}
