@@ -13,3 +13,9 @@ const html = getHtmlOfObjectTable(yourObject);
 // Write to a file
 await Deno.writeTextFile("output.html", html);
 ```
+
+
+## Example Output
+
+![Example of JSON Object to HTML Viewer](./example.png)
+

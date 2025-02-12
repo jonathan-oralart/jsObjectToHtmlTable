@@ -1,6 +1,7 @@
 import { getHtmlOfObjectTable } from "./mod.ts";
 
-const file = await Deno.readTextFile("./big-json-example-abacus.json");
+// const file = await Deno.readTextFile("./big-json-example-abacus.json");
+const file = await Deno.readTextFile("./random-user-data.json");
 
 const json = JSON.parse(file);
 
