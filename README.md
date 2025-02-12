@@ -1,6 +1,6 @@
 # JSON Object to HTML Viewer
 
-A tool that converts JavaScript/JSON objects into an interactive HTML table view with a beautiful, collapsible interface.
+A tool that converts JavaScript/JSON objects into an interactive HTML table view with a beautiful, collapsible interface. Inspired by [LinqPad](https://www.linqpad.net/)'s Dump method.
 
 ## Usage
 
