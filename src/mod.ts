@@ -1,8 +1,8 @@
-import { render } from 'preact-render-to-string';
-import { html } from 'npm:htm/preact';
-import type { VNode } from 'npm:preact';
-import { isValid, parseISO } from 'npm:date-fns';
-import { formatInTimeZone } from 'npm:date-fns-tz';
+import { render } from 'npm:preact-render-to-string@^6.5.13';
+import { html } from 'npm:htm@^3.1.1/preact';
+import type { VNode } from 'npm:preact@^10.25.4';
+import { isValid, parseISO } from 'npm:date-fns@^4.1.0';
+import { formatInTimeZone } from 'npm:date-fns-tz@^3.2.0';
 
 const styles = Deno.readTextFileSync('src/styles.css');
 

@@ -1,14 +1,10 @@
 {
   "name": "@jonpdw/json-object-to-html-viewer",
   "version": "0.0.1",
-  "exports": "./mod.ts",
+  "exports": "./src/mod.ts",
   "license": "MIT",
   "tasks": {
     "dev": "deno run --watch --allow-read --allow-write --allow-env src/test.ts"
   },
-  "imports": {
-    "@tabler/icons-react": "npm:@tabler/icons-react@^3.30.0",
-    "preact-render-to-string": "npm:preact-render-to-string@^6.5.13",
-    "date-fns-tz": "npm:date-fns-tz@^2.0.0"
-  }
+  "imports": {}
 }
