@@ -4,7 +4,10 @@ import type { VNode } from 'npm:preact@^10.25.4';
 import { isValid, parseISO } from 'npm:date-fns@^4.1.0';
 import { formatInTimeZone } from 'npm:date-fns-tz@^3.2.0';
 
-const styles = Deno.readTextFileSync('src/styles.css');
+// const styles = Deno.readTextFileSync('src/styles.css');
+import { styles } from './styles.ts';
+// const clientScript = Deno.readTextFileSync('src/clientScript.js');
+import { clientScript } from './clientScript.js';
 
 const showUndefined = true;
 const showEmptyStrings = true;
@@ -246,7 +249,6 @@ export function getHtmlOfObjectTable(object: unknown): string {
     ${GenerateJsObjectHtml({ jsonData: object, defaultOpenLevels: 3 })}
   </div>`);
 
-  const clientScript = Deno.readTextFileSync('src/clientScript.js');
 
   return `
     <!DOCTYPE html>

@@ -1,3 +1,5 @@
+export const clientScript = `
+
 // deno-lint-ignore-file no-window
 // Initialize folding mode and selection state
 let foldingMode = 'normal';
@@ -27,18 +29,18 @@ function updateFoldLevelIndicator() {
     if (indicator) {
         let message = '';
         if (selectedRow) {
-            message = `Press 1-10 to adjust fold level relative to selection (current: ${openLevels})`;
+            message = \`Press 1 - 10 to adjust fold level relative to selection(current: \${ openLevels })\`;
         } else {
-            message = `Press 1-10 to adjust fold level (current: ${openLevels})`;
+            message = \`Press 1 - 10 to adjust fold level(current: \${ openLevels })\`;
         }
 
-        indicator.innerHTML = `
-            <div>
-                ${message} | 
-                Folding Mode: ${foldingMode} ${foldingMode === 'normal' ? '(hold Shift for recursive)' : '(recursive folding active)'} |
-                Navigation: ↑↓ between rows | Fullscreen: F
-            </div>
-        `;
+        indicator.innerHTML = \`
+    < div >
+    \${ message } |
+        Folding Mode: \${ foldingMode } \${ foldingMode === 'normal' ? '(hold Shift for recursive)' : '(recursive folding active)' } |
+            Navigation: ↑↓ between rows | Fullscreen: F
+            </div >
+    \`;
     }
 }
 
@@ -329,3 +331,4 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });
 }); 
+`;

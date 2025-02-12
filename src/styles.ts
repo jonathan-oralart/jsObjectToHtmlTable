@@ -1,3 +1,4 @@
+export const styles = `
 * {
   font-family: monospace;
   font-size: 12px;
@@ -369,3 +370,5 @@ td .array-table {
   outline: 2px solid #4a6da7;
   outline-offset: -2px;
 }
+
+`
