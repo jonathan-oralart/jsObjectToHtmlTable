@@ -1,6 +1,6 @@
 {
   "name": "@jonpdw/json-object-to-html-viewer",
-  "version": "0.0.8",
+  "version": "0.0.9",
   "exports": "./src/mod.ts",
   "license": "MIT",
   "tasks": {
