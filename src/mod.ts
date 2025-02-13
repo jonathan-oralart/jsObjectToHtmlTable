@@ -241,7 +241,8 @@ const GenerateJsObjectHtml = ({ jsonData, defaultOpenLevels = 3, depth = 0 }: {
 };
 
 /** Converts a JavaScript object into an interactive HTML table view with collapsible sections */
-export function getHtmlOfObjectTable(object: object): string {
+// deno-lint-ignore no-explicit-any
+export function getHtmlOfObjectTable(object: any): string {
   const content = render(html`<div class="json-viewer-table">
     <div class="fold-level-indicator">Press 1-10 to adjust fold level (current: 3) | Folding Mode: normal (hold Shift for recursive)</div>
     ${GenerateJsObjectHtml({ jsonData: object, defaultOpenLevels: 3 })}
