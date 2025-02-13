@@ -1,10 +1,10 @@
 {
   "name": "@jonpdw/json-object-to-html-viewer",
-  "version": "0.0.6",
+  "version": "0.0.7",
   "exports": "./src/mod.ts",
   "license": "MIT",
   "tasks": {
-    "dev": "deno run --watch --allow-read --allow-write --allow-env src/test.ts"
+    "dev": "deno run --watch --allow-read --allow-write --allow-env src/example.ts"
   },
   "imports": {}
 }

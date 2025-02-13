@@ -5,7 +5,8 @@ A tool that converts JavaScript/JSON objects into an interactive HTML table view
 ## Usage
 
 ```typescript
-import { getHtmlOfObjectTable } from "./mod.ts";
+import  { getHtmlOfObjectTable } from "@jonpdw/json-object-to-html-viewer";
+
 
 // Convert your object to HTML
 const html = getHtmlOfObjectTable(yourObject);

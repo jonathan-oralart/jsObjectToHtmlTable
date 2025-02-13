@@ -4,7 +4,7 @@ import type { VNode } from 'npm:preact@^10.25.4';
 import { isValid, parseISO } from 'npm:date-fns@^4.1.0';
 import { formatInTimeZone } from 'npm:date-fns-tz@^3.2.0';
 import { styles } from './styles.ts';
-import { clientScript } from './clientScript.js';
+import { clientScript } from './clientScript.ts';
 
 const showUndefined = true;
 const showEmptyStrings = true;
